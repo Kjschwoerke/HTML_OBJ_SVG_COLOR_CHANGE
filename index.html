@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Color Change with JS</title>
+</head>
+<body>
+    <object 
+        id= "svgObject"
+        data="./youtube-square-brands.svg"
+        type="image/svg+xml"
+        style = "height: 100px; width: 100px;"
+    />
+
+    <script>
+        window.onload = function() {
+        
+	    let svgObject = document.getElementById("svgObject").contentDocument.getElementById('svgPath');
+    
+	    svgObject.setAttribute("fill", "green");
+        };
+    </script>
+</body>
+</html>
+
+<!-- This article breaks it down more: https://benfrain.com/selecting-svg-inside-tags-with-javascript/   -->

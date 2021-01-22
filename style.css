@@ -1,0 +1,9 @@
+.svgStyle {
+    fill: green;
+}
+
+#SVGobject {
+    height: 200px;
+    width: auto;
+    fill: green;
+}
